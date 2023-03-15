@@ -1,0 +1,37 @@
+.footer-link{
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.footer-link:hover, .footer-link:focus, .footer-link:active, .footer-link span{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover span{
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(1rem);
+}
+
+.footer-link::before{
+   transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover::before{
+    position: absolute;
+    left: 0;
+    color: #ab854f;
+    font-size: 1.5rem;
+    content: '•';
+    text-decoration: none;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+}

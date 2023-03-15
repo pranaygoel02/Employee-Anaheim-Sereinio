@@ -1,0 +1,35 @@
+.box-height-full{
+    height: 14rem;
+    transition: all 350ms ease;
+}
+
+.box-height-0{
+    height: 0px;
+    transition: all 350ms ease;
+}
+
+
+.link-menu{
+    opacity: 0;
+    transition: all 0.3s ease;
+    min-width: 5rem;
+}
+
+.link-menu:hover{
+    opacity: 1;
+}
+
+.link:hover ~ .link-menu,.link:focus-visible ~ .link-menu{
+    opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .box-height-0, .box-height-full{
+        height: 100%;
+    }
+}
+
+.active{
+    color: #ab854f;
+}
+ 
